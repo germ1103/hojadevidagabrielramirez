@@ -1,0 +1,598 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+body{
+  background: #4D5151;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hoja_vida{
+  width: 800px;
+  height: 1123px;
+  margin: 55px auto;
+  background: #fff;    
+  overflow: hidden;
+  font-size: 70%;
+}
+
+.encab{
+  width: 85%;
+  height: 120px;
+  border-radius: 15px;
+  margin: 30px 60px 15px 60px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 0px black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.rotulo{
+  text-align: center;
+}
+.rotulo h2{
+  font-size: 25px;
+  font-weight: 750;
+}
+.rotulo h3{
+  font-size: 18px;
+  font-weight: 450;  
+}
+.rotulo h4{
+  font-weight: 600;
+  font-size: 16px;
+}
+.rotulo p{
+  font-weight: 600;
+  font-size: 12px;
+}
+.entidad {
+  text-align: center; 
+}
+
+.datos-personales{ 
+  width: 85%;  
+  margin: 15px auto; 
+  display: flex;
+}
+.numero{
+    background: black;
+    color:white;
+    border-radius: 10px;    
+    text-align: center;
+    padding: 5px; 
+    font-size: 13px;
+    display: inline;
+}
+.datos{
+    background: black;
+    color:white;
+    border-radius: 10px;    
+    text-align: center;
+    padding: 2px 15px; 
+    font-size: 13px;
+    display: inline;
+    
+}
+.linea{
+  border: 2px solid #47C4DD;
+  margin: 12px 0px 11px 0px;
+  width: 8px;
+
+}
+.form-datos-personales{
+  width: 85%;
+  height: 300px;
+  border: 1px solid #000000;
+  margin: 15px auto;
+  box-shadow: 5px 5px 0px #000000; 
+  background-color: #f2fafc;
+}
+.form-datos-personales input{
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #f2fafc;
+}
+.primera-linea{ 
+  width: 100%;
+  height: 50px;
+  display: flex;  
+}
+.primera-linea input{
+  border: none;
+  margin: 5px;
+  padding: 2px;
+}
+.primer-apellido{  
+  width: 33%;
+  border-bottom: 1px solid #000000;
+  font-size: 80%;
+  padding: 4px;
+  font-style: italic; 
+  border: 1px solid #000000; 
+}
+.segunda-apellido{
+  width: 33%;
+  font-size: 80%;
+  padding: 4px;
+  font-style: italic; 
+  border: 1px solid #000000; 
+}
+.nombre{  
+  width: 34%;
+  font-size: 80%;
+  padding: 4px;
+  font-style: italic; 
+  border: 1px solid #000000; 
+}
+.segunda-linea{
+  display: flex;
+  height: 50px;
+  position: relative;
+ 
+}
+.documento-id{ 
+  width: 43%;
+  border: 1px solid #000000;
+  padding: 4px;  
+  position: relative;
+}
+
+#numero{
+  position: absolute;
+  margin-left: 4px; 
+  font-size: 80%;
+  top: 6px; 
+  margin-bottom: 10px;
+ 
+}
+#num{
+  margin-left: 12px;
+  margin-top: 8px;
+}
+.documento-id label{
+  font-size: 80%;
+  padding-right: 2px;
+  padding-top: 2px;
+}
+.sexo{
+  display: block;
+  width: 16%;
+  border: 1px solid #000000;
+  padding: 2px;
+}
+.sexo label{
+  font-size: 80%;
+  padding-right: 2px;
+  padding-top: 2px; 
+}
+.nacionalidad{
+  display: flex;
+  width: 41%;
+  border: 1px solid #000000;
+
+}
+.nacionalidad label{
+  font-size: 80%;
+  padding-right: 2px;
+  padding-top: 2px;
+}
+.nac1{
+  width: 50%;
+  margin-right: 4px;
+}
+.nac2{
+  width: 30%;
+  margin: 4px 0px 8px 0px;
+  top: 6px;  
+}
+.nac2 input{
+  width: 100px;
+}
+
+.tercera-linea{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid black;
+  position: relative;
+}
+.primera-clase{
+  width: 25%;
+  margin: 2px;
+  padding: 2px;
+  font-size: 80%;
+}
+.segunda-clase{
+  width: 25%;
+  position: relative;
+ top: 30px;
+ font-size: 80%;
+  
+}
+.numero-libreta{
+  width: 30%;
+  top: 25px;
+  position: relative;
+  font-size: 80%;
+}
+.dm{
+  width: 20%;  
+  position: relative;
+  top: 26px;
+  font-size: 80%;
+}
+.dm input{
+  width: 80px;
+}
+.cuarta-linea{
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid black;
+  font-size: 80%;
+}
+.fecha-nacimiento{
+  width: 35%;
+  display: block;
+  border: 1px solid black; 
+  padding: 8px; 
+}
+.fecha-nacimiento label{
+margin-bottom: 6px;
+}
+.direccion{
+  width: 65%;
+  display: block;
+  float:right;
+  border: 1px solid black;
+  padding: 8px;
+}
+.direccion label{
+  margin-bottom: 20px;
+  
+}
+.datos-academica{ 
+  width: 85%;  
+  margin: 15px auto; 
+  display: flex;
+}
+
+.formacion-academica{
+  width: 85%;
+  height: 500px;
+  border: 1px solid #000000;
+  margin: 15px auto;
+  box-shadow: 5px 5px 0px #000000;  
+  background-color: #f2fafc;
+ 
+}
+.tabla input{
+  background-color: #f2fafc;
+  border: none;
+}
+.educacion-basica{
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid #000;
+}
+.educacion-basica p{
+  margin: 2px;
+  padding: 2px;
+  font-size: 80%;
+  font-weight: 700;
+  
+}
+.educacion-basica h3{
+  margin: 2px;
+  padding: 2px;  
+  font-weight: 700;  
+}
+.tabla{
+  width: 90%;
+  margin: 0px auto;
+  border: 1px solid black;  
+  border-radius: 15px;
+}
+.linea-uno{
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  height: 20px;
+}
+.eduacion-basica{
+  display: block;
+  width: 50%; 
+  text-align: center; 
+  border-right: 1px solid black;
+  background: rgba(217, 245, 245, 0.87);
+}
+.educacion-basica p{
+  padding: 5px;
+}
+.eduacion-basica h3{
+  padding: 5px;
+}
+.titulo{
+  display: block;
+  width: 50%; 
+  text-align: center;   
+}
+.linea-dos{
+  display: flex;
+  justify-content: space-evenly;
+  height: 20px;
+  border-bottom: 1px solid black;
+  justify-content: space-evenly;
+}
+.primaria{
+  display: block;
+  width:  18%; 
+  text-align: center;
+  border-right: 1px solid black;
+  background: rgba(217, 245, 245, 0.87);
+}
+.segundaria{
+  display: block;
+  width: 22%;
+  border-right: 1px solid black;
+  text-align: center;
+  background: rgba(217, 245, 245, 0.87);
+}
+.media{
+  display: block;
+  width: 10%;
+  border-right: 1px solid black;
+  text-align: center;
+  background: rgba(217, 245, 245, 0.87);
+}
+.fecha-grado{
+  display: block;
+  width: 50%;
+ 
+  text-align: center;
+}
+.linea-tres{
+  display: flex;
+  justify-content: space-evenly;
+  height: 20px;
+}
+.educacion-media{
+  border-bottom: 1px solid #000;
+}
+
+.soportes{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+.soportes input{
+  width:auto;
+  height: 20px;
+  
+}
+.academica{  
+  width: 12%;
+}
+.academica em{
+  font-size: 10px;
+  font-weight: 700;
+ 
+}
+.aprobados{
+  display: block;
+  width: 17%;
+}
+.graduado{
+ display: block;
+  width: 12%; 
+  justify-items: right;
+}
+/* .si{
+  width: 50%; 
+  border: none;   
+}
+.si input{
+  width: 15px;
+  margin-top: 8px;
+}
+.no{
+  width: 50%;
+}
+.no input{
+  width: 15px;
+  margin-top: 8px;
+} */
+.nombres{
+  display: block;
+  width: 32%;
+}
+.terminado{
+  display: block;
+  width: 17%;
+}
+.tarjeta{
+  display: block;
+  width:22%;
+}
+.idioma{
+  width: 100%;
+  border-top: 1px solid black; 
+  padding: 2px;
+  font-weight: 600;
+  font-size: 90%;  
+}
+.idioma-int{
+  width: 60%;
+  height: 80px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.l-uno{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 30px;
+  font-weight: 700;
+}
+.idio{
+  display: block;
+  width: 40%;
+  text-align: center;
+  border: 1p solid black;
+  border-right: 1px solid black;
+}
+
+.lo-habla{
+  display: block;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid black;
+}
+.lo-lee{
+  display: block;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid black;
+}
+.lo-escr{
+  display: block;
+  width: 20%;
+  text-align: center;
+}
+.r,.b,.mb{
+  display: inline;
+  text-align: center;
+  border-right: 1px solid black;
+  margin: auto;
+}
+.lo, .le, .lee{
+  border-bottom: 1px solid black;
+  justify-content: center;
+  white-space: auto;
+}
+.l-dos{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 20px;
+  font-weight: 700;
+  overflow: hidden;
+}
+.l-dos input{
+  border: none;
+  width: 15px;
+  height: 100%;
+}
+.div-uno{
+  display: block;
+  width: 40%;
+ border-right: 1px solid black;
+}
+.div-uno input{
+  width: 100%;  
+}
+.div-dos{
+  display: block;
+  width: 7%;
+  border-right: 1px solid black;
+}
+.div-dos input{
+  width: 100%;  
+}.div-tres{
+  display: block;
+  width: 7%;
+ border-right: 1px solid black;
+}
+.div-tres input{
+  width: 100%;  
+}
+.div-cuatro{
+  display: block;
+  width: 7%;
+  border-right: 1px solid black;
+}
+.div-cuatro input{
+  width: 100%;  
+}
+.div-cinco{
+  display: block;
+  width: 7%;
+ border-right: 1px solid black;
+}
+.div-cinco input{
+  width: 100%;  
+}
+.div-seis{
+  display: block;
+  width: 7%;
+  border-right: 1px solid black;
+}
+.div-seis input{
+  width: 100%;  
+}
+.div-siete{
+  display: block;
+  width: 7%;
+ border-right: 1px solid black;
+}
+.div-siete input{
+  width: 100%;  
+}
+.div-ocho{
+  display: block;
+  width: 7%;
+  border-right: 1px solid black;
+}
+.div-ocho input{
+  width: 100%;  
+}.div-nueve{
+  display: block;
+  width: 7%;
+ border-right: 1px solid black;
+}
+.div-nueve input{
+  width: 100%;  
+}
+.div-diez{
+  display: block;
+  width: 7%;
+  border-right: 1px solid black;
+}
+.div-diez input{
+  width: 100%;  
+}
+.l-tres{
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 20px;
+  font-weight: 700;
+  overflow: hidden;
+}
+.l-tres input{
+  border: none;
+  width: 15px;
+  height: 100%;
+}
+.end{
+  margin-left: 60px;
+  text-align: center;
+  font-size: 25px;
+  font-family:cursive;
+}
+
+.tiempo{
+  background: rgb(158, 146, 134);
+  border-radius: 10px;
+  font-size: 30px;
+  
+}

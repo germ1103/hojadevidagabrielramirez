@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/scritp.js"></script>
+</head>
+<body>
+    <section class="hoja_vida">
+        <div class="encab">
+            <div class="foto">
+                <img src="img/Escudo.png" alt="escudo">               
+            </div>
+            <div class="rotulo">
+                <h3>FORMATO UNICO</h3>
+                <h2>HOJA DE VIDA</h2>
+                <h4>Persona Natural</h4>
+                <p>(Leyes 190 de 1995, 489 y 443 de 1998)</p>
+            </div>
+            <div class="entidad">
+                <div class="entidad-uno">
+                    <label for="receptor">ENTIDAD RECEPTORA</label><br>
+                    <input type="text" id="receptor"><br><br>
+                </div>
+                <div class="tiempo" >
+                    <span id="reloj">00 : 00 : 00</span>
+                </div>              
+            </div>
+        </div>
+        <div class="datos-personales" onclick="ocultar();" >             
+           <p class="numero">1.</p>         
+            <p class="linea"></p> 
+            <p class="datos">DATOS PERSONALES</p>                        
+        </div>        
+        <div class="form-datos-personales" id="datosPersonales">
+            <form action="" id="form"> 
+                <div class="primera-linea">
+                    <div class="primer-apellido">
+                        <label for="apellido_1">PRIMER APELLIDO</label>
+                        <input type="text" name="apellido_1" id="apellido_1" onkeyup="getData();">
+                    </div>
+                    <div class="segunda-apellido">
+                        <label for="apellido_2">SEGUNDO APELLIDO (O DE CASADA)</label>
+                        <input type="text" name="apellido_2" id="apellido_2" onkeyup="getData();">
+                    </div>
+                    <div class="nombre">
+                        <label for="nombre">NOMBRE</label><br>
+                        <input type="text" name="nombre" id="nombre" onkeyup="getData();">
+                    </div>
+                </div>
+            </form>            
+            <div class="segunda-linea">
+                <div class="documento-id">
+                    <em id="numero">NUMERO DE IDENTIFICACION</em><br>
+                    <label for="cc">CC.</label>  
+                    <input type="radio" name="identificacion" id="cc" value="cc"> 
+                    <label for="ce">CE.</label>                   
+                    <input type="radio" name="identificacion" id="ce" value="ce">  
+                    <label for="pas">PS</label>
+                    <input type="radio" name="identificacion" id="pas" value="pas">
+                    <label id="num" for="numero">No</label>
+                    <input type="text" name="numero">
+                </div>
+                <div class="sexo">
+                    <em id="numero">SEXO</em><br><br>
+                    <label for="f">F</label>
+                    <input type="radio" name="sexo" id="f" name="f">
+                    <label for="m">M</label>
+                    <input type="radio" name="sexo" id="m" name="m">
+                </div>
+                <div class="nacionalidad">
+                    <div class="nac1">
+                    <em id="numero">NACIONALIDAD</em><br><br>   
+                    <label for="c">COL</label>
+                    <input type="radio" name="nacionalidad" id="c" name="c">
+                    <label for="e">EXTRANJERO</label>
+                    <input type="radio" name="nacionalidad" id="e" name="e">
+                    </div>
+                    <div class="nac2">
+                        <label for="pais">PAIS</label><br>
+                     <input type="text" name="" id="">
+                    </div>            
+               </div>               
+            </div>
+            <div class="tercera-linea">                
+                    <div class="primera-clase">
+                        <p>LIBRETA MILITAR</p><br> 
+                        <label for="primera">PRIMERA CLASE</label>
+                        <input type="radio" name="libreta" id="primera" value="primera">
+                    </div>
+                    <div class="segunda-clase">
+                        <label for="segunda">SEGUNDA CLASE</label>  
+                        <input type="radio" name="libreta" id="segunda" value="segunda">
+                    </div>
+                    <div class="numero-libreta">
+                        <label for="numero" >NUMERO:</label>
+                        <input type="text" id="numero">
+                    </div>
+                    <div class="dm">
+                        <label for="dm" >DM:</label>
+                        <input type="text" id="dm">
+                    </div>
+            </div>
+            <div class="cuarta-linea">
+                <div class="fecha-nacimiento">
+                <p>FECHA Y LUGAR DE NACIMIENTO</p><br>
+                <span>FECHA</span>
+                <input type="date" name="date" id="date"><br><br>
+                <label for="pais">PAIS </label>
+                <input type="text" name="pais" id="pais"><br>
+                <label for="departamento">DEPARTAMENTO</label>
+                <input type="text" name="departamento" id="departamento"><br>
+                <label for="municipio">MUNICIPIO</label>
+                <input type="text" name="municipio" id="municipio"> 
+
+                </div>
+                <div class="direccion">
+                <label for="Direccion_Correspondencia">DIRECCION DE CORRESPONDENCIA</label><br>
+                <input type="text" name="Direccion_Correspondencia" id="Direccion_Correspondencia"><br><br>
+                <label for="pais_c">PAIS </label>
+                <input type="text" name="pais_c" id="pais_c">
+                <label for="departamento_c">DEPARTAMENTO</label>
+                <input type="text" name="departamento_c" id="departamento_c"><br>
+                <label for="municipio_c">MUNICIPIO</label>
+                <input type="text" name="municipio_c" id="municipio_c"> <br>
+                <label for="telefono">TELEFONO</label>
+                <input type="text" name="telefono" id="telefono">
+                <label for="mail">MAIL</label>
+                <input type="email" name="mail" id="mail">                    
+                </div>
+            </div>            
+        </div>
+        <div class="datos-academica" onclick="ocultarAcademicas()">           
+            
+            <p class="numero">2.</p>
+             <p class="linea"></p> 
+             <p class="datos">DATOS ACADEMICA</p>  
+             </em>
+             
+         </div>
+        <div class="formacion-academica" id="formacionAcademica">
+            <div class="educacion-basica">
+                <h3>EDUCACION MEDIA</h3>
+                <p>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DE
+                EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</p><br>
+                <div class="tabla">
+                    <div class="linea-uno">
+                        <div class="eduacion-basica">
+                            <h4>EDUCACION BASICA</h4>
+                        </div>
+                        <div class="titulo">
+                            <h4>TITULO OBTENIDO</h4>
+                        </div>
+                    </div>
+                    <div class="linea-dos">
+                       <div class="primaria"><p>PRIMARIA</p></div>
+                      <div class="segundaria"><p>SEGUNDARIA</p></div>
+                      <div class="media"><p>MEDIA</p></div>
+                      <div class="fecha-grado">FECHA DE GRADO</div>
+                    </div>
+                    <div class="linea-tres">
+                        <div class="en">1o</div>
+                        <div class="en">2o</div>
+                        <div class="en">3o</div>
+                        <div class="en">4o</div>
+                        <div class="en">5o</div>
+                        <div class="en">6o</div>
+                        <div class="en">7o</div>
+                        <div class="en">8o</div>
+                        <div class="en">9o</div>
+                        <div class="en">10</div>
+                        <div class="en">11</div>
+                        <div class="fecha">
+                            <label for="mes_t">MES:</label>
+                            <input type="text" name="mes_t" id="mes_t">
+                            <label for="año_t">AÑO:</label>
+                            <input type="text" name="año_t" id="año_t">
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="educacion-media">
+                <em id="espp">EDUCACIÓN SUPERIOR (PREGRADO Y POSTGRADO)</em>
+					<br><br>
+					<h5>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:</h5>
+					<br>
+					TC (TÉCNICA), &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTL (TECNOLÓGIA), &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTE (TECNOLÓGIA ESPECIALIZADA), &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUN (UVIVERSITARIA),<br>
+					ES (ESPECIALIZACIÓN), &nbsp&nbsp&nbsp&nbsp&nbsp&nbspMG (MAESTRÍA O MAGISTER), &nbsp&nbsp&nbsp&nbsp&nbsp&nbspDOC (DOCTORADO O PHD),<br>	
+					RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN UNA LEY).
+				                
+            </div>
+            <div class="soportes">
+                <div class="academica">
+                    <em>MODALIDAD ACADEMICA</em>
+                    <input id="Ma" type="text">
+                    <input id="Ma" type="text">
+                    <input id="Ma" type="text">
+                    <input id="Ma" type="text">
+                    <input id="Ma" type="text">
+                </div>
+                <div class="aprobados">
+                    <em> No. SEMESTRE APROBADOS </em>
+                    <input id="Nsa" type="text">
+                    <input id="Nsa" type="text">
+                    <input id="Nsa" type="text">
+                    <input id="Nsa" type="text">
+                    <input id="Nsa" type="text">
+                </div>
+                <div class="graduado">
+                    <!-- <div>
+                       
+                    </div>
+                     -->
+                    <!-- <div class="si"> --> 
+                        <em>GRADUADO</em><br>
+                        <em>SI</em><em>   </em><em>NO</em><br>
+                        <input type="radio" name="" id="si"><input type="radio" name="" id="no"><br>
+                        <input type="radio" name="" id="si"><input type="radio" name="" id="no"><br>
+                        <input type="radio" name="" id="si"><input type="radio" name="" id="no"><br>
+                        <input type="radio" name="" id="si"><input type="radio" name="" id="no"><br>
+                        <input type="radio" name="" id="si"><input type="radio" name="" id="no"><br>
+                    <!-- </div> -->
+                    <!-- <div class="no">
+                        <em>NO</em>
+                        <input type="radio" name="" id="no">
+                        <input type="radio" name="" id="no">
+                        <input type="radio" name="" id="no">
+                        <input type="radio" name="" id="no">
+                        <input type="radio" name="" id="no">
+                    </div> -->
+                </div>
+                <div class="nombres">
+                    <em>NOMBRE DE LOS ESTUDIOS O TÍTULOS OBTENIDO</em>
+                    <br>
+                    <input id="Nom" type="text">
+                    <input id="Nom" type="text">
+                    <input id="Nom" type="text">
+                    <input id="Nom" type="text">
+                    <input id="Nom" type="text">
+                </div>
+                <div class="terminado">
+                    <em>TERMINACION <br> (MES AÑO)</em>
+                    <input id="ter" type="date" value="null">
+                    <input id="ter" type="date" value="null">
+                    <input id="ter" type="date" value="null">
+                    <input id="ter" type="date" value="null">
+                    <input id="ter" type="date" value="null">
+                    </div>
+                <div class="tarjeta">
+                    <em>No. DE TARJETA <br> PROFECIONAL</em><br>
+                    <input id="Nta" type="text">
+                    <input id="Nta" type="text">
+                    <input id="Nta" type="text">
+                    <input id="Nta" type="text">
+                    <input id="Nta" type="text">
+                </div>
+            </div>
+            <div class="idioma">
+                <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (<b>R</b>), BIEN (<b>B</b>) O MUY BIEN (<b>MB</b>) </p>
+                <div class="idioma-int">
+                    <div class="l-uno">
+                        <div class="idio">
+                            <span>IDIOMA</span>
+                        </div>
+                        <div class="lo-habla">
+                            <div class="lo">
+                                <p>LO HABLA</p>
+                            </div>
+                            <div class="r"><em>R</em></div>
+                            <div class="b"><em>B</em></div>
+                            <div class="mb"><em>MB</em></div>
+                        </div>
+                        <div class="lo-lee">
+                            <div class="lee">
+                                <p>LO LEE</p>
+                            </div>
+                            <div class="r"><em>R</em></div>
+                            <div class="b"><em>B</em></div>
+                            <div class="mb"><em>MB</em></div>
+                        </div>
+                        <div class="lo-escr">
+                            <div class="le">
+                                <p>LO ESCRIBE</p>
+                            </div>
+                            <div class="r"><em>R</em></div>
+                            <div class="b"><em>B</em></div>
+                            <div class="mb"><em>MB</em></div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="l-dos">
+                        <div class="div-uno">
+                            <input type="text">
+                        </div>
+                        <div class="div-dos">
+                            <input type="text">
+                        </div>
+                        <div class="div-tres">
+                            <input type="text">
+                        </div>
+                        <div class="div-cuatro">
+                            <input type="text">
+                        </div>
+                        <div class="div-cinco">
+                            <input type="text">
+                        </div>
+                        <div class="div-seis">
+                            <input type="text">
+                        </div>
+                        <div class="div-siete">
+                            <input type="text">
+                        </div>
+                        <div class="div-ocho">
+                            <input type="text">
+                        </div>
+                        <div class="div-nueve">
+                            <input type="text">
+                        </div>
+                        <div class="div-diez">
+                            <input type="text">
+                        </div>
+
+                    </div>
+                    <div class="l-tres">
+                        <div class="div-uno">
+                            <input type="text">
+                        </div>
+                        <div class="div-dos">
+                            <input type="text">
+                        </div>
+                        <div class="div-tres">
+                            <input type="text">
+                        </div>
+                        <div class="div-cuatro">
+                            <input type="text">
+                        </div>
+                        <div class="div-cinco">
+                            <input type="text">
+                        </div>
+                        <div class="div-seis">
+                            <input type="text">
+                        </div>
+                        <div class="div-siete">
+                            <input type="text">
+                        </div>
+                        <div class="div-ocho">
+                            <input type="text">
+                        </div>
+                        <div class="div-nueve">
+                            <input type="text">
+                        </div>
+                        <div class="div-diez">
+                            <input type="text">
+                        </div>
+
+                    </div>
+                </div>
+            </div>                        
+        </div>
+        <div class="end">
+            <span id="firma"></span>
+        </div>                   
+    </section>
+
+</body>
+</html>
